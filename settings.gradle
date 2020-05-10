@@ -1,0 +1,4 @@
+include 'file'
+include 'rest'
+
+rootProject.name = 'devtester-spring-camel'

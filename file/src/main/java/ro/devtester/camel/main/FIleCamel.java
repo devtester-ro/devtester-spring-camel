@@ -1,0 +1,12 @@
+package ro.devtester.camel.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class FIleCamel {
+    public static void main(final String[] args) throws Exception {
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("camel-context.xml");
+        // Keep main thread alive for some time to let application finish processing the input files.
+        Thread.sleep(10000);
+        applicationContext.close();
+    }
+}
